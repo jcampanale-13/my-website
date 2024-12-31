@@ -1,10 +1,10 @@
 import Image from "next/image"
-import profile from "../../../public/profile.jpg"
+import profile from "../../public/profile.jpg"
 import { Github, Linkedin } from "lucide-react"
 import Link from "next/link"
 import { ROUTING_CONSTANTS } from "@/app/constants/routing.constants"
 
-export const HomePage = () => {
+export default function Home() {
     return (
         <div className="flex flex-wrap items-center space-x-20 justify-center my-32">
             <div className="rounded-lg bg-[#111111] text-neutral-300 p-6 border-2 border-[#999] ">
