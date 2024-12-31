@@ -3,7 +3,7 @@ import Link from "next/link"
 export const NavBar = () => {
     return(
         <nav className="flex justify-between bg-[#111111] p-4 text-neutral-300">
-            <Link href="/home" className="hover:underline hover:text-white">
+            <Link href="/" className="hover:underline hover:text-white">
                 Home
             </Link>
             <div className="flex gap-4">
