@@ -2,7 +2,6 @@ import { Project } from "../components/project/project";
 import pathly from '../../public/pathly.png'
 import optum from '../../public/optum.png'
 import twgbam from '../../public/twgbam.png'
-import unreal_logo_circle from '../../public/unreal_logo_circle.jpg'
 import question from '../../public/question.png'
 import { DESCRIPTIONS_CONSTANTS } from "../constants/descriptions.constants";
 
