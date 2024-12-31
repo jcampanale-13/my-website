@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="flex items-center space-x-20 justify-center my-32">
             <div className="rounded-lg bg-[#111111] text-neutral-300 p-6 border-2 border-[#999] ">
                 <h1 className="text-4xl mb-4">Contact Me:</h1>
-                <p className="text-xl">Email: 
+                <p className="text-xl">Email:
                     <span className="text-white font-bold hover:underline">
                     <Link href="mailto:jcampanale54@gmail.com">
                         jcampanale54@gmail.com
