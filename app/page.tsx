@@ -6,7 +6,7 @@ import { ROUTING_CONSTANTS } from "./constants/routing.constants";
 
 export default function Home() {
     return (
-      <div className="flex flex-wrap items-center space-x-20 justify-center my-32">
+      <div className="flex flex-wrap items-center justify-center my-32 gap-12">
       <div className="rounded-lg bg-[#111111] text-neutral-300 p-6 border-2 border-[#999] ">
           <h1 className="text-4xl">Hello! I&apos;m <span className="text-white font-bold">Jack Campanale</span></h1>
           <p className="text-xl">I&apos;m an Associate Software Engineer at <span className="text-orange-700 font-bold">Optum</span></p>
