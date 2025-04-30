@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 import React, { useState } from 'react';
 
@@ -26,14 +26,14 @@ export const Project: React.FC<AccordionProps> = ({ title, content, img, rounded
             <div className="flex flex-col items-center text-center" onClick={toggleAccordion}>
                 <h2 className="text-2xl mb-4">{title}</h2>
                 <Image className={`${rounded ? 'rounded-full' : ''} mb-4`} src={img} height={120} alt={imgAlt}/>
-                <span>{isOpen ? <ChevronUp/> : <ChevronDown/>}</span>
+                <span className={`transition-transform duration-200 ${isOpen && 'transform rotate-180' }`}><ChevronDown/></span>
             </div>
-            <div className={`grid transition-all ease-in-out duration-300 overflow-hidden ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+            <div className={`grid overflow-hidden ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
                 <div className='overflow-hidden text-center'>
                     {content}
                     {
                         extra && 
-                            <p className='mt-4'>
+                            <p className={`transition-none mt-4 ${isOpen ? 'block' : 'hidden'}`}>
                                 {extra}&nbsp;
                                 <span>
                                 {
